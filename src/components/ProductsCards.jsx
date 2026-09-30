@@ -30,7 +30,7 @@ const ProductsCards = ({ product, isInCart }) => {
           </div>
 
           {/* Content */}
-          <div className="min-w-0 flex-1">
+          <div className="flex-1 min-w-0 ">
             <div className="flex items-center gap-1.5">
               <span className="grid size-4 place-items-center rounded-full bg-[#28594f] text-[10px] text-white">
                 ✓
@@ -75,18 +75,18 @@ const ProductsCards = ({ product, isInCart }) => {
         <img
           src={product.image}
           alt={product.title}
-          className="h-full w-full object-contain transition-transform duration-200 group-hover:scale-105"
+          className="object-contain w-full h-full transition-transform duration-200 group-hover:scale-105"
         />
         <span className="absolute left-3 top-3 rounded-sm bg-[#e2efeb] px-2.5 py-1 text-xs font-medium capitalize text-[#28594f]">
           {product.category}
         </span>
       </div>
 
-      <div className="flex flex-1 flex-col p-4">
+      <div className="flex flex-col flex-1 p-4">
         <h2 className="line-clamp-2 min-h-12 text-sm font-semibold leading-6 text-[#203532]">
           {product.title}
         </h2>
-        <div className="mt-3 flex items-center gap-2">
+        <div className="flex items-center gap-2 mt-3">
           <span className="rounded-sm bg-[#2f725e] px-2 py-1 text-xs font-semibold text-white">
             {product.rating.rate} ★
           </span>
@@ -94,7 +94,7 @@ const ProductsCards = ({ product, isInCart }) => {
             {product.rating.count} reviews
           </span>
         </div>
-        <div className="mt-auto flex items-center justify-between gap-3 pt-4">
+        <div className="flex items-center justify-between gap-3 pt-4 mt-auto">
           <span className="text-xl font-semibold text-[#203532]">
             ${product.price.toFixed(2)}
           </span>
