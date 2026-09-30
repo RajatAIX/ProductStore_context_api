@@ -1,3 +1,6 @@
+Live Demo:
+[https://your-frontend-url.con](https://product-store-context-api.vercel.app/)
+
 # Product Store
 
 Product Store is a small shopping cart application built with React. It loads products from the Fake Store API and lets users add products to a cart, adjust quantities, or remove items.
